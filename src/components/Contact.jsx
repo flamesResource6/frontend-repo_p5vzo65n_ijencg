@@ -10,7 +10,7 @@ export default function Contact() {
             <p className="mt-3 text-white/70">We are here to help you ship fast.</p>
             <div className="mt-6 space-y-3 text-white/80">
               <p><span className="text-white">Sales:</span> +1 (555) 123-4567</p>
-              <p><span className="text-white">Email:</span> support@wavelink.dev</p>
+              <p><span className="text-white">Email:</span> support@whatsapp.sabtech.org</p>
             </div>
           </div>
           <div className="relative p-6 rounded-2xl bg-white/5 backdrop-blur-xl ring-1 ring-white/10">
@@ -23,7 +23,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="mt-16 text-white/60 text-sm">
-          © {new Date().getFullYear()} WaveLink • Privacy • Terms
+          © {new Date().getFullYear()} WHATSAPP.SABTECH.ORG • Privacy • Terms
         </div>
       </div>
     </section>

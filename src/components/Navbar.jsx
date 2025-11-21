@@ -11,7 +11,7 @@ export default function Navbar({ onCTAClick }) {
         <div className="h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 shadow-[inset_2px_2px_6px_rgba(255,255,255,0.15),inset_-3px_-3px_8px_rgba(0,0,0,0.25)] ring-1 ring-white/20" />
-            <span className="text-white/90 dark:text-white text-lg font-semibold tracking-tight">WaveLink</span>
+            <span className="text-white/90 dark:text-white text-lg font-semibold tracking-tight">WHATSAPP.SABTECH.ORG</span>
           </div>
 
           <nav className="hidden md:flex items-center gap-8 text-sm text-white/70">
