@@ -5,18 +5,18 @@ import { UserPlus2, QrCode, Code2 } from 'lucide-react'
 const steps = [
   {
     icon: UserPlus2,
-    title: 'Sign Up',
-    desc: 'Create an account and generate your API keys in seconds.',
+    title: 'Create Account',
+    desc: 'Sign up, create your instance to get Instance ID and Token.',
   },
   {
     icon: QrCode,
     title: 'Scan QR',
-    desc: 'Authenticate your WhatsApp number securely by scanning a QR code.',
+    desc: 'Authenticate your instance with your WhatsApp number securely.',
   },
   {
     icon: Code2,
-    title: 'Use the API',
-    desc: 'Send and receive messages, media, and events with a clean REST API.',
+    title: 'Start Sending',
+    desc: 'Use simple HTTP requests to send and receive messages in any language.',
   },
 ]
 
@@ -26,7 +26,7 @@ export default function HowItWorks() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-white">How it works</h2>
-          <p className="mt-3 text-white/70">Three simple steps to go live</p>
+          <p className="mt-3 text-white/70">Create Instance → Scan QR → Send Messages</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

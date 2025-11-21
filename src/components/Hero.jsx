@@ -20,25 +20,25 @@ export default function Hero({ onPrimary, onSecondary }) {
             className="relative"
           >
             <span className="inline-block mb-5 px-3 py-1 rounded-full text-xs font-medium tracking-wide bg-white/10 ring-1 ring-white/20 text-white/90">
-              WhatsApp API Gateway
+              WHATSAPP.SABTECH.ORG • Enterprise WhatsApp API
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
-              Connect WhatsApp to your stack in minutes
+              Send and receive WhatsApp messages via secure APIs
             </h1>
             <p className="mt-5 text-lg text-white/70 max-w-xl">
-              Authenticate with a quick QR scan, then send and receive messages at scale with a developer-first API. Secure, reliable, and blazing fast.
+              Create your instance, scan a QR to authenticate, and start sending OTPs, alerts, invoices, media, and more. Fixed pricing. No per‑message fees.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <button onClick={onPrimary} className="group relative inline-flex items-center justify-center px-6 h-12 rounded-2xl font-semibold text-white bg-gradient-to-r from-cyan-400 to-blue-600 shadow-[0_8px_30px_rgba(56,189,248,0.35)] hover:shadow-[0_8px_40px_rgba(59,130,246,0.45)] transition-all">
                 <span className="relative z-10">Get Started</span>
                 <span className="absolute inset-0 rounded-2xl bg-white/10 opacity-0 group-hover:opacity-100 transition" />
               </button>
-              <button onClick={onSecondary} className="inline-flex items-center justify-center px-6 h-12 rounded-2xl font-semibold text-white/90 bg-white/10 hover:bg-white/15 ring-1 ring-white/15">
+              <a href="https://whatsapp.sabtech.org/Login.php" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 h-12 rounded-2xl font-semibold text-white/90 bg-white/10 hover:bg-white/15 ring-1 ring-white/15">
                 Test Gateway
-              </button>
+              </a>
             </div>
             <div className="mt-6 text-white/60 text-sm">
-              • OAuth-free onboarding • Real-time webhooks • Rich media support
+              • QR-based auth • Delivery reports • Interactive buttons & lists • 2‑way messaging
             </div>
           </motion.div>
 

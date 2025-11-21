@@ -1,5 +1,5 @@
 import React from 'react'
-import { Sun, Moon, Menu } from 'lucide-react'
+import { Sun, Moon, Menu, LogIn } from 'lucide-react'
 import { useTheme } from './ThemeProvider'
 
 export default function Navbar({ onCTAClick }) {
@@ -21,10 +21,17 @@ export default function Navbar({ onCTAClick }) {
             <a href="#contact" className="hover:text-white transition-colors">Contact</a>
           </nav>
 
+          <div className="hidden lg:flex items-center gap-6 text-xs text-white/70">
+            <div className="hidden xl:flex items-center gap-6">
+              <span className="hover:text-white transition-colors"><span className="text-white">Sales:</span> +923212022077</span>
+              <a href="mailto:support@whatsapp.sabtech.org" className="hover:text-white transition-colors"><span className="text-white">Support:</span> support@whatsapp.sabtech.org</a>
+            </div>
+          </div>
+
           <div className="flex items-center gap-3">
             <button
               aria-label="Toggle theme"
-              className="relative inline-flex items-center justify-center w-10 h-10 rounded-xl bg-white/5 hover:bg-white/10 ring-1 ring-white/10 transition-all"
+              className="relative inline-flex items-center justify-center w-10 h-10 rounded-xl bg-white/5 hover:bg-white/10 ring-1 ring-white/10 transition-all focus:outline-none focus:ring-2 focus:ring-cyan-400/50"
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             >
               {theme === 'dark' ? (
@@ -34,9 +41,19 @@ export default function Navbar({ onCTAClick }) {
               )}
               <span className="sr-only">Toggle theme</span>
             </button>
+            <a
+              href="https://whatsapp.sabtech.org/Login.php"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline-flex items-center gap-2 px-4 h-10 rounded-xl text-sm font-semibold text-white bg-white/10 hover:bg-white/15 ring-1 ring-white/15 transition-all"
+              aria-label="Login"
+            >
+              <LogIn className="w-4 h-4" />
+              Login
+            </a>
             <button
               onClick={onCTAClick}
-              className="hidden sm:inline-flex items-center gap-2 px-4 h-10 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-cyan-400/30 to-blue-600/30 hover:from-cyan-400/50 hover:to-blue-600/50 ring-1 ring-cyan-300/30 shadow-[0_0_20px_rgba(56,189,248,0.25)] transition-all"
+              className="hidden md:inline-flex items-center gap-2 px-4 h-10 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-cyan-400/30 to-blue-600/30 hover:from-cyan-400/50 hover:to-blue-600/50 ring-1 ring-cyan-300/30 shadow-[0_0_20px_rgba(56,189,248,0.25)] transition-all"
             >
               Get Started
             </button>

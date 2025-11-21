@@ -4,24 +4,24 @@ import { motion } from 'framer-motion'
 const tiers = [
   {
     name: 'Starter',
-    price: '$0',
-    tagline: 'For testing and prototypes',
-    features: ['1 WhatsApp instance', '100 messages/day', 'Basic webhooks', 'Community support'],
-    cta: 'Start Free',
+    price: '$19',
+    tagline: 'Fixed price. No per-message fees.',
+    features: ['1 WhatsApp instance', '2,000 messages/day', 'Incoming webhooks', 'Community support'],
+    cta: 'Start Free Trial',
     popular: false,
   },
   {
-    name: 'Pro',
+    name: 'Business',
     price: '$49',
-    tagline: 'For growing products',
+    tagline: 'Best for growing teams',
     features: ['Up to 3 instances', '50k messages/mo', 'Priority webhooks', 'Email support'],
-    cta: 'Upgrade',
+    cta: 'Choose Business',
     popular: true,
   },
   {
-    name: 'Scale',
+    name: 'Enterprise',
     price: 'Custom',
-    tagline: 'For high volume teams',
+    tagline: 'High volume and compliance needs',
     features: ['Unlimited instances', 'Dedicated infra', 'SLAs & SSO', 'Dedicated support'],
     cta: 'Contact Sales',
     popular: false,
@@ -34,7 +34,7 @@ export default function Pricing() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-white">Pricing</h2>
-          <p className="mt-3 text-white/70">Simple plans that scale with you</p>
+          <p className="mt-3 text-white/70">Fixed price. No hidden fees.</p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {tiers.map((t, i) => (
